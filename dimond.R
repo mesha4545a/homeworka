@@ -34,6 +34,9 @@ ggplot(data = diamonds,mapping = aes(x =cut, y = price))+
   geom_boxplot()
 
 ggplot(data = diamonds)+
+
+
+ 
   geom_count(mapping = aes(x = cut, y = color))
 
 diamonds %>%
@@ -51,3 +54,6 @@ ggplot(data= smaller)+
 ggplot(data= smaller, mapping = aes(x= carat, y=price))+
   geom_boxplot(mapping = aes(group= cut_width(carat,0.1)))
 
+# ok so what i got is that befor working it better to understand data and how it beheave and the beset way to do that is by ploting 
+# i think this is the reason many use different tolles like some use tablue for this any way it better to know how data behave
+# the way to know is by asking questions then ploting the result will get us usually to aske flow up question which result in another ploting and so on
